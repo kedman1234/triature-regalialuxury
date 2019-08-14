@@ -1,0 +1,107 @@
+.scroll_wrapper {
+    min-height: 100vh;
+    color: #000;
+    position: relative;
+}
+.scroll_section {
+    min-height: 100vh;
+    display: flex;
+}
+.scroll_nav__wrapper {
+    position: fixed;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    background: transparent;
+    flex-flow: column nowrap;
+    justify-content: center;
+    right: 0;
+}
+.scroll_wrapper .nav {
+    position: relative;
+    margin: 0 30px 100px 0;
+    text-align: right;
+}
+.scroll_wrapper .nav__counter {
+    font-size: 24px;
+    transition: all 0.15s ease-out;
+}
+.scroll_wrapper .nav__title {
+    font-size: 12px;
+    margin: 0;
+    width: auto;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+    display: inline-block;
+    color: #E6D2AC;
+    font-family: 'Proxima Nova Bold';
+    letter-spacing: 2px;
+    /*
+    -ms-writing-mode: tb-rl; 
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -ms-transform: rotate(180deg);
+    */
+}
+.scroll_wrapper .nav__body {
+    font-weight: 100;
+    font-size: 18px;
+    font-size: 18px;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.scroll_wrapper .nav li {
+    position: relative;
+    transition: all 0.3s ease-out;
+    /*    margin-bottom: 1em;*/
+}
+.scroll_wrapper .nav li:after {
+    content: '';
+    display: block;
+    border-top: 1px solid #E6D2AC;
+    height: 200px;
+    width: 15px;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
+.scroll_wrapper .nav li a {
+    display: block;
+    padding: 0;
+    color: #000;
+    transition: all 0.15s ease-out;
+}
+.scroll_wrapper .nav li a:hover {
+    background-color: transparent;
+    padding-left: 1em;
+}
+.scroll_wrapper .nav li a:focus {
+    background-color: transparent;
+}
+.scroll_wrapper .nav li.active {
+    pointer-events: none;
+    padding-left: 1em;
+}
+.scroll_wrapper .nav li.active:after {
+    width: 25px;
+    height: 400px;
+    top: 15px;
+    border-width: 2px;
+}
+.scroll_wrapper .nav li.active .nav__counter {
+    font-size: 48px;
+}
+.scroll_wrapper .nav li.active .nav__title {
+    height: 40px;
+    opacity: 1;
+    overflow: visible;
+}
+.scroll_wrapper .nav li.active .nav__body {
+    height: 100px;
+    opacity: 1;
+    overflow: visible;
+}

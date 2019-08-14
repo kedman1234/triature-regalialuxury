@@ -1,0 +1,28 @@
+<header class="header-container wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
+    <div class="header-block">
+        <div class="header-flex">
+            <div class="flex-item flex-item-1">
+                <div class="hamburger" id="hamburger-1"  style="margin: 0px 4px;">
+                    <span class="line wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s"></span>
+                    <span class="line wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s"></span>
+                    <span class="line wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s"></span>
+                </div>
+                <span class="header-text font-size_s font-bold ls-1">MENU</span>
+            </div>
+            <div class="flex-item flex-item-2">
+                <img class="img-logo" src="assets/images/Logo.png" alt="Regalia Luxury">
+            </div>
+            <div class="flex-item flex-item-3">
+                <span class="header-text font-size_s font-bold ls-1">CONCIERGE</span>
+                <img class="concierge-icon wow tada" data-wow-duration="1s" data-wow-delay="1s" src="assets/images/icons/Concierge%20Icon.png" style="margin: 0px 8px;">
+            </div>
+        </div> 
+    </div>
+</header>
+<script>
+    $(document).ready(function(){
+        $(".hamburger").click(function(){
+            $(this).toggleClass("is-active");
+        });
+    });
+</script>
