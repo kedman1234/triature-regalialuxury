@@ -12,17 +12,31 @@
             <div class="flex-item flex-item-2">
                 <img class="img-logo" src="assets/images/Logo.png" alt="Regalia Luxury">
             </div>
-            <div class="flex-item flex-item-3">
+            <div class="flex-item flex-item-3 contact-menu--btn">
                 <span class="header-text font-size_s font-bold ls-1">CONCIERGE</span>
-                <img class="concierge-icon wow tada" data-wow-duration="1s" data-wow-delay="1s" src="assets/images/icons/Concierge%20Icon.png" style="margin: 0px 8px;">
+                <img class="concierge-icon wow tada contact-icon" data-wow-duration="1s" data-wow-delay="1s" src="assets/images/icons/Concierge%20Icon.png" style="margin: 0px 8px;">
             </div>
         </div> 
     </div>
+   
 </header>
 <script>
     $(document).ready(function(){
         $(".hamburger").click(function(){
             $(this).toggleClass("is-active");
         });
+        const imgIcon = document.querySelector(".contact-icon");
+        const contactBtn= document.querySelector(".contact-menu--btn");
+        const closeContactBtn = document.querySelector(".close-contact-menu--btn")
+        const contactMenu = document.querySelector(".contact-menu");
+        const body =  document.querySelector("body");
+        contactBtn.addEventListener("click",() => {
+                contactMenu.style.transform = "translateX(0vw)"
+                body.style.overflowY = "hidden"
+        })
+        closeContactBtn.addEventListener("click",() => {
+                contactMenu.style.transform = "translateX(100vw)"
+                body.style.overflowY = "auto"
+        })
     });
 </script>

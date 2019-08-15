@@ -1,0 +1,118 @@
+.contact-menu--btn {
+  cursor: pointer;
+}
+.contact-menu {
+    z-index: 9999;
+  position: fixed;
+  top: 0;
+  color: #fff;
+  transform: translateX(100vw);
+  width: 100vw;
+  transition: all ease-in 0.6s;
+  height: 100vh;
+  background: #00334d;
+}
+.contact-menu > * {
+  color: #fff;
+}
+.contact-menu--row {
+  padding: 3rem 10rem;
+}
+.close-contact-menu--btn {
+    font-weight: bolder;
+  cursor: pointer;
+}
+.left-contact--form > * {
+  color: #ab7d23;
+}
+
+
+
+/* NAV MENU */
+.nav-menu{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    color: #fff;
+    transform: translateX(-100vw);
+    width: 100vw;
+    transition: all ease-in 0.6s;
+    height: 100vh;
+    background: #00334d;
+}
+.nav-menu--row {
+    padding: 3rem 10rem;
+  }
+  .nav-menu > * {
+    color:  #ab7d23;
+  }
+ 
+  .close-nav-menu--btn {
+      font-weight: bolder;
+    cursor: pointer;
+  }
+  .main-heading > *{
+    color:  #ab7d23;
+  }
+  .main-heading {
+      margin-top: 10rem;
+  }
+  .brand-row {
+      margin-top:5%;
+  }
+  .brand-text {
+      margin-left:.5rem;
+      margin-top: 1rem;
+      word-spacing: 1.4;
+      line-height: 1.4;
+      color:  rgb(117, 165, 158);
+  }
+  input[type=text] {
+    border: none;
+    padding: 2px;
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom:1px solid #ab7d23;
+    background-color: transparent;
+    outline: 0;
+
+   
+  }
+  input::placeholder {
+      color:#ab7d23;
+  }
+  input[type=text]:focus {
+    border: none;
+    background-color:transparent;
+  border-bottom:1px solid #ab7d23;
+    outline: 0;
+  }
+  .contact-field {
+    margin-top:5%;
+  }
+  .contact-filed-title {
+    margin-top:5%;
+  }
+  .white-line {
+      position: absolute;
+      height: 100vh;
+      top:0;
+        left:45%;
+      width: .5px;
+      background: rgba(255, 255, 255, 0.616)
+  }
+  .nav-row{
+      margin-top: 30vh;
+      text-align: center;
+
+  }
+  .nav-row ul li > a{
+      font-size: 24px;
+    margin-right: 25px;
+    
+    
+}
+.nav-press {
+    display: block;
+    margin:40px 0px 20px 0px;
+}
