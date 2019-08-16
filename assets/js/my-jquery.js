@@ -56,7 +56,7 @@ $(document).ready(function() {
         autoplay: true,
         dots: false,
         slideTransition: 'linear',
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1500,
         onInitialized: startProgressBar,
         onTranslate: resetProgressBar,
         onTranslated: startProgressBar
@@ -65,7 +65,7 @@ $(document).ready(function() {
     function startProgressBar() {
         $(".slide-progress").css({
             width: "100%",
-            transition: "width 5000ms"
+            transition: "width 3000ms"
         });
     }
 

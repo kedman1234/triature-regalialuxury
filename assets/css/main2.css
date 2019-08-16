@@ -5,18 +5,22 @@
     z-index: 9999;
   position: fixed;
   top: 0;
+  overflow-x: hidden;
   color: #fff;
-  transform: translateX(100vw);
+  transform: scaleX(0);
   width: 100vw;
-  transition: all ease-in 0.6s;
+  opacity: 0;
+  transition: all ease-in 0.3s;
   height: 100vh;
   background: #00334d;
 }
+
 .contact-menu > * {
   color: #fff;
 }
 .contact-menu--row {
-  padding: 3rem 10rem;
+  /* padding: 3rem 10rem; */
+  padding:5vh 10vw 2vh 10vw;
 }
 .close-contact-menu--btn {
     font-weight: bolder;
@@ -34,9 +38,10 @@
     position: fixed;
     top: 0;
     color: #fff;
-    transform: translateX(-100vw);
+    transform: scaleX(0);
     width: 100vw;
-    transition: all ease-in 0.6s;
+    opacity: 0;
+    transition: all ease-in 0.3s;
     height: 100vh;
     background: #00334d;
 }
@@ -51,6 +56,35 @@
       font-weight: bolder;
     cursor: pointer;
   }
+  .nav-menu--btn {
+    cursor: pointer;
+  }
+  .nav-menu--btn:hover {
+    color:#BE851E;
+    cursor: pointer;
+  }
+  .contact-menu--btn:hover {
+    color:#BE851E;
+    /* #00334D */
+  }
+  .contact-menu--btn--bottom:hover {
+    background:#00334D;
+    color:#fff;
+  }
+  .contact-menu--row {
+    transform: translateX(-100px);
+    opacity: 0.3;
+    transition: all ease-in 0.7s;
+  }
+  .nav-list >li a:hover {
+color:#BE851E !important;
+  }
+  
+  .nav-row{
+    transform: translateX(-100px);
+    opacity: 0.3;
+    transition: all ease-in 0.7s;
+  }
   .main-heading > *{
     color:  #ab7d23;
   }
@@ -63,9 +97,11 @@
   .brand-text {
       margin-left:.5rem;
       margin-top: 1rem;
-      word-spacing: 1.4;
-      line-height: 1.4;
-      color:  rgb(117, 165, 158);
+      text-align: left;
+      font: Book 20px/29px FreightText Pro;
+      letter-spacing: 0;
+      color: #E6D2AC;
+      line-height: 1.6;
   }
   input[type=text] {
     border: none;
@@ -88,10 +124,14 @@
     outline: 0;
   }
   .contact-field {
-    margin-top:5%;
+    margin-top:10%;
   }
   .contact-filed-title {
-    margin-top:5%;
+    margin-top:10%;
+  }
+  .custom-link{
+    position: absolute;
+    top:0;
   }
   .white-line {
       position: absolute;
@@ -115,4 +155,14 @@
 .nav-press {
     display: block;
     margin:40px 0px 20px 0px;
+}
+
+@media(max-width :768px) {
+  .contact-menu {
+    overflow-y:auto;
+}
+}
+.nav__title .text-up {
+  writing-mode: vertical-rl !important;
+text-orientation: mixed !important;
 }
