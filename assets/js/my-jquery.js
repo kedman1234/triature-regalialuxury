@@ -17,6 +17,28 @@ $('a[href*=#]:not([href=#])').click(function() {
 $(document).ready(function() {
     var one = $("#one");
     var two = $("#two");
+    const three = $("#three");
+    three.owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+
+        }
+    });
     one.owlCarousel({
         loop: true,
         margin: 20,
@@ -40,12 +62,23 @@ $(document).ready(function() {
     });
     // NAVIGATION FOR OWL CAROUSEL
     var owl = one;
+    const owl2 =  three;
+    owl2.owlCarousel();
     owl.owlCarousel();
     $('#customNextBtn').click(function() {
         owl.trigger('next.owl.carousel');
+       
     })
     $('#customPrevBtn').click(function() {
+      
         owl.trigger('prev.owl.carousel', [300]);
+    });
+    $('#customNextBtn-2').click(function() {
+        owl2.trigger('next.owl.carousel');
+    })
+    $('#customPrevBtn-2').click(function() {
+      
+        owl2.trigger('prev.owl.carousel', [300]);
     });
 
     //Init the carousel

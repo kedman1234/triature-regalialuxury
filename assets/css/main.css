@@ -32,7 +32,7 @@
 .hamburger .line{
     width: 16px;
     height: 2px;
-    background-color: #000000;
+    background-color: #355B6E;
     display: block;
     margin: 2px 4px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -110,7 +110,7 @@
     margin-top: 25px;
 }
 .social_profile a{
-    color: #e76555;
+    color: #ab7d23;
     display: inline-block;
     font-size: 24px;
     text-align: center;

@@ -15,6 +15,15 @@ app.controller("SliderCtrl", ["$scope", "$http", "$window", "$location", "$ancho
             onTranslate: resetProgressBar,
             onTranslated: startProgressBar
         });
+        $(".owl-carousel-2").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            dots: false,
+            onInitialized: startProgressBar,
+            onTranslate: resetProgressBar,
+            onTranslated: startProgressBar
+        });
     }
 
     function startProgressBar() {
