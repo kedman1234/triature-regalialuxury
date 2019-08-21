@@ -50,6 +50,7 @@ html {
   margin-left: 1.3%;
 }
 .section1-title {
+ 
   font-family: "Proxima Nova Bold";
   margin-top: 60px;
 }
@@ -58,7 +59,7 @@ html {
   width: 524px;
   position: absolute;
   top: 0;
-  left: 29%;
+  left: 62vh;
   z-index: 99;
   object-fit: scale-down;
 }
@@ -76,13 +77,13 @@ html {
   z-index: 999;
 }
 .section2-img {
-  top: 20%;
+  top: 20vh;
   height: 65vh;
   position: absolute;
-  left: -31%;
+  left: -68vh;
 }
 .section2-arrow {
-  top: 90%;
+  top: 90vh;
   position: absolute;
   left: -23%;
 }
@@ -91,14 +92,18 @@ html {
 }
 .blue-bold-text {
   color: #00334d;
+  font-size: 15px;
   font-family: "Proxima Nova Bold";
 }
+
 .section2-text {
-  margin-top: 6.5%;
-  margin-left: 11%;
+  position: absolute;
+  top: 18vh;
+  left: 11.5vw;
   font-family: "Proxima Nova Bold";
 }
 .section2-subheading {
+  font-size: 15px;
   margin-top: 45px;
   text-transform: uppercase;
   color: #be851e;
@@ -106,6 +111,7 @@ html {
 .section2-sub-text {
   margin-top: 35px;
   width: 45vw;
+  line-height: 1.3;
   font-size: 28px;
   color: #00334d;
   font-family: "Freight Medium";
@@ -157,18 +163,22 @@ html {
 }
 
 .section4-text {
-  margin-top: 6.5%;
-  margin-left: 27.5%;
+  position: absolute;
+top: 18%;
+  left: 27.5%;
+
   font-family: "Proxima Nova Bold";
 }
 .section4-subheading {
   margin-top: 45px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #be851e;
 }
 .section4-sub-text {
   margin-top: 35px;
   width: 45vw;
+  line-height: 1.3;
   font-size: 28px;
   color: #00334d;
   font-family: "Freight Medium";
@@ -215,18 +225,21 @@ object-fit: cover;
 }
 
 .section7-text {
-  margin-top: 6.5%;
-  margin-left: -25.5%;
+  position: absolute;
+top: 20.5%;
+  left: -26.5%;
   font-family: "Proxima Nova Bold";
 }
 .section7-subheading {
   margin-top: 45px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #be851e;
 }
 .section7-sub-text {
   margin-top: 35px;
   width: 45vw;
+  line-height: 1.3;
   font-size: 28px;
   color: #00334d;
   font-family: "Freight Medium";
@@ -261,12 +274,14 @@ object-fit: cover;
 }
 .section8-subheading {
   margin-top: 45px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #be851e;
 }
 .section8-sub-text {
   margin-top: 35px;
   width: 45vw;
+  line-height: 1.3;
   font-size: 28px;
   color: #00334d;
   font-family: "Freight Medium";
