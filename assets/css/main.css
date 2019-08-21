@@ -188,7 +188,7 @@
     width: 0;
     max-width: 100%;
     height: 4px;
-    background: #7fc242;
+    background: #D5B16F;
 }
 .sec-eight{
     height: 80vh;
@@ -282,7 +282,7 @@
 }
 .first-section .item-2{
     width: 70%;
-    padding: 80px 0 10px;
+    padding: 30px 0 40px;
 }
 .section-title_left{
     display: inline-block;
@@ -347,14 +347,32 @@
     font-family: 'Freight Medium';
 }
 .my-btn{
-    background: url(../images/icons/Button.svg) no-repeat center;
+    background: url(../images/iconsSVG/Concierge\ Button.svg) no-repeat center;
+    background-size: cover;
+    width: 160px;
+    padding: 10px;
+}
+.my-btn--submit{
+    background: url(../images/iconsSVG/Submit\ Button.svg) no-repeat center;
+    background-size: cover;
+    width: 160px;
+    padding: 10px;
+}
+.my-btn--submit:hover,
+.my-btn--submit:focus{
+    background: url(../images/iconsSVG/Submit\ Button-1.svg) no-repeat center;
+    color: #fff;
     background-size: cover;
     width: 160px;
     padding: 10px;
 }
 .my-btn:hover,
 .my-btn:focus{
-    color: #BE851E;
+    background: url(../images/iconsSVG/ConciergeButton-1.svg) no-repeat center;
+    color: #fff;
+    background-size: cover;
+    width: 160px;
+    padding: 10px;
 }
 @media screen and (max-width: 1024px) {
     .timeline-text_1{
@@ -405,7 +423,7 @@
     width: 0;
     max-width: 100%;
     height: 4px;
-    background: #7fc242;
+    background: #D5B16F;
 }
 /* SCROLL HOME PAGE CSS */
 .scroll_wrapper {
@@ -533,6 +551,7 @@
 
 .second-section--text{
     text-align: center;
+    color: #D5B16F;
     position: absolute;
     left: -75px;
     top: 25%;
@@ -590,7 +609,7 @@
 }
 .link_buttons li:hover a {
     opacity: 1;
-    max-width: 150px;
+    max-width: 220px;
     transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color .2s;
 }
 .brand_logo-block{
@@ -724,6 +743,7 @@
     .concierge-icon{
         width: 24px;
     }
+    
     .slider-text {
         line-height: 70px;
         width: 950px;
@@ -756,6 +776,7 @@
     }
     .second-section--text {
         text-align: center;
+        color: #D5B16F;
         position: absolute;
         left: -115px;
         top: 20%;

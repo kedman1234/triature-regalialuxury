@@ -140,3 +140,4 @@ new simpleParallax(fifth2, {
        orientation: 'left',
     transition: 'cubic-bezier(0,0,0,1)'
 });
+

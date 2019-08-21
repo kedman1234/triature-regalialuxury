@@ -13,13 +13,13 @@
                         <ul class="footer_ul font-medium text-up">
                             <!-- <li><a href="" class="text-color-2">OUR STORY</a></li> -->
                             <li>
-                                <a href="" class="text-color-2">KITON</a>
-                                <a href="" class="text-color-2">JOHN LOBB</a>
-                                <a href="" class="text-color-2">ISAIA</a>
-                                <a href="" class="text-color-2">BOVET</a>
-                                <a href="" class="text-color-2">RESSENCE</a>
+                                <a  href="" class="text-color-2"><img class="footer-social" src="assets/images/icons/Arrow-Right.png">&nbsp;&nbsp;KITON</a>
+                                <a  href="" class="text-color-2"><img class="footer-social" src="assets/images/icons/Arrow-Right.png">&nbsp;&nbsp;JOHN LOBB</a>
+                                <a  href="" class="text-color-2"><img class="footer-social" src="assets/images/icons/Arrow-Right.png">&nbsp;&nbsp;ISAIA</a>
+                                <a  href="" class="text-color-2"><img class="footer-social" src="assets/images/icons/Arrow-Right.png">&nbsp;&nbsp;BOVET</a>
+                                <a  href="" class="text-color-2"><img class="footer-social" src="assets/images/icons/Arrow-Right.png">&nbsp;&nbsp;RESSENCE</a>
                             </li>
-                            <li><a href="" class="text-color-2">PRESS</a></li>
+                            <li><a href="" class="text-color-2"><img class="footer-press"  src="assets/images/icons/Arrow-Right.png">&nbsp;&nbsp;PRESS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -47,4 +47,21 @@
             scrollTop : 0                    
         }, 500);
     });
+    const footerLinks = document.querySelectorAll(".footer-social");
+    const footerPress  = document.querySelector(".footer-press");
+    console.log(footerLinks)
+function addArrowHover(link){
+    link.style.visibility = "hidden";
+        link.addEventListener("mouseover",() => {
+          console.log("test")
+            link.style.visibility ="visible"
+        })
+        link.addEventListener("mouseout",() => {
+            link.style.visibility ="hidden"
+        })
+}
+links.forEach(link => {
+    addArrowHover(link)
+})
+addArrowHover(footerPress)
 </script>
