@@ -235,6 +235,9 @@ height: 0vh;
   .contact-menu {
     overflow-y: auto;
   }
+  .web-only {
+    display: none;
+  }
   .rl-timeline {
     padding-top: 0px;
   }
@@ -262,6 +265,7 @@ right:10px; */
   .mobile-appointments {
     text-align: left;
   }
+
   .contact-info {
     display: none;
   }

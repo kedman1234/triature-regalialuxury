@@ -78,9 +78,9 @@ html {
 }
 .section2-img {
   top: 20vh;
-  height: 65vh;
+  max-height: 65vh;
   position: absolute;
-  left: -68vh;
+ left: -68vh;
 }
 .section2-arrow {
   top: 90vh;
@@ -91,6 +91,7 @@ html {
   cursor: pointer;
 }
 .blue-bold-text {
+  text-transform: uppercase;
   color: #00334d;
   font-size: 15px;
   font-family: "Proxima Nova Bold";
@@ -218,7 +219,7 @@ object-fit: cover;
 .section7-arrow {
   top: 90vh;
   position: absolute;
-  left: -25.5vw;
+  left: -27.5vw;
 }
 .section7-arrow:hover {
   cursor: pointer;
@@ -227,7 +228,7 @@ object-fit: cover;
 .section7-text {
   position: absolute;
 top: 20.5vh;
-  left: -26.5vw;
+  left: -27.5vw;
   font-family: "Proxima Nova Bold";
 }
 .section7-subheading {
@@ -261,15 +262,15 @@ top: 20.5vh;
 .section8-arrow {
   top: 90vh;
   position: absolute;
-  left:  7.5vw;
+  left:  9vw;
 }
 .section8-arrow:hover {
   cursor: pointer;
 }
 
 .section8-text {
-  margin-top: 9.5vh;
-  margin-left: 8vw;
+  margin-top: 10vh;
+  margin-left: 9vw;
   font-family: "Proxima Nova Bold";
 }
 .section8-subheading {
@@ -285,4 +286,139 @@ top: 20.5vh;
   font-size: 28px;
   color: #00334d;
   font-family: "Freight Medium";
+}
+.mobile-view {
+  display: none;
+}
+.yellow-mid-text{
+  color:#BE851E;
+  font-family: "Freight Medium";
+  font-size: 26px;
+  line-height: 1.3;
+
+}
+.blue-mid-text {
+  color: #00334D;
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 1.3;
+  font-family: "Freight Medium";
+}
+.yellow-small-text {
+  color:#BE851E;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-family: "Proxima Nova Bold";
+}
+
+.yellow-line {
+  display: inline-block;
+  background: #E6D2AC;
+  margin-bottom: 5px;
+  width:30px;
+  height: 2px;
+}
+
+@media(max-width: 768px){
+  .web-view{
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+    text-align: center;
+  }
+  .brand-logo-mobile{
+    margin-top:100px; 
+  }
+  .section1-img-mobile {
+    margin-top:25px;
+    max-height: 70vh; 
+    width: 100vw;
+    object-fit: cover;
+  }
+  .scrollmagic-pin-spacer {
+    display: none;
+  }
+  .section-text-spacing {
+    margin-left:30px;
+    margin-right: 50px;
+  }
+  .section-1-text-mobile {
+   text-align: left;
+   margin-top:30px;
+  }
+  .section-2-mobile{
+    text-align: left;
+   margin-top:35px;
+  }
+  
+  .section2-img1 {
+    margin-top:25px;
+  max-height: 50vh;
+  width: 100%;
+  }
+  .section3-img1{
+    margin-top:35px;
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+  }
+  .section-3-mobile {
+    position: relative;
+  }
+  .section3-img2{
+    top:70%;
+   left:-8%;
+  transform: rotate(90deg) scale(0.8);
+  
+  }
+  .section-4-mobile{
+    text-align: left;
+    position: relative;
+   margin-top:210px;
+  
+  }
+  .section4-img1 {
+    margin-top:25px;
+    margin-bottom: 25px;
+  max-height: 50vh;
+  width: 100%;
+  }
+  .section4-img2 {
+    margin-top:10px;
+    margin-bottom: 25px;
+  max-height: 50vh;
+  width: 100%;
+  }
+  .section4-img3 {
+    position: absolute;
+    top:80%;
+    left:-30%;
+   transform: rotate(90deg) scale(0.7);
+  }
+  .section-5-mobile {
+    text-align: left;
+    position: relative;
+   margin-top:330px;
+  }
+  .section5-img1 {
+    margin-top:35px;
+  height: 65vh;
+  }
+  .section-6-mobile {
+    text-align: left;
+    position: relative;
+    margin-top:550px;
+  }
+  .section6-img1 {
+    margin-top:25px;
+  max-height: 60vh;
+  width: 100%;
+  }
+  .section6-img2 {
+    margin:40px 0px;
+    max-height: 60vh;
+    width: 100%;
+  }
 }
