@@ -121,20 +121,20 @@ html {
   position: absolute;
   height: 90vh;
   width: 70vw;
-  left: -33%;
+  left: -33vw;
   object-fit: cover;
 }
 .section3-img2 {
   position: absolute;
-  top: 40%;
-  left: 32%;
+  top: 40vh;
+  left: 32vw;
   height: 50vh;
   object-fit: cover;
 }
 .section3-arrow {
-  top: 90%;
+  top: 90vh;
   position: absolute;
-  left: 57%;
+  left: 57vw;
 }
 .section3-arrow:hover {
   cursor: pointer;
@@ -148,15 +148,15 @@ html {
   z-index: 999;
 }
 .section4-img {
-  top: 20%;
+  top: 20vh;
   height: 65vh;
   position: absolute;
-  left: -25%;
+  left: -25vw;
 }
 .section4-arrow {
-  top: 90%;
+  top: 90vh;
   position: absolute;
-  left: 70%;
+  left: 70vw;
 }
 .section4-arrow:hover {
   cursor: pointer;
@@ -164,8 +164,8 @@ html {
 
 .section4-text {
   position: absolute;
-top: 18%;
-  left: 27.5%;
+top: 18vh;
+  left: 27.5vw;
 
   font-family: "Proxima Nova Bold";
 }
@@ -186,19 +186,19 @@ top: 18%;
 .section5-img1 {
   height: 80vh;
   position: absolute;
-  left: -10%;
+  left: -10vw;
 }
 .section5-img2 {
   height: 60vh;
-  top: 40%;
+  top: 40vh;
   position: absolute;
-  left: 10%;
+  left: 10vw;
 }
 .section6-img {
   position: absolute;
   height: 100vh;
 width: 100vw;
-left:-30%;
+left:-30vw;
 object-fit: cover;
 }
 /* SECTION SEVEN */
@@ -210,15 +210,15 @@ object-fit: cover;
   z-index: 999;
 }
 .section7-img {
-  top: 20%;
+  top: 20vh;
   height: 75vh;
   position: absolute;
-  left: 27%;
+  left: 27vw;
 }
 .section7-arrow {
-  top: 90%;
+  top: 90vh;
   position: absolute;
-  left: -25.5%;
+  left: -25.5vw;
 }
 .section7-arrow:hover {
   cursor: pointer;
@@ -226,8 +226,8 @@ object-fit: cover;
 
 .section7-text {
   position: absolute;
-top: 20.5%;
-  left: -26.5%;
+top: 20.5vh;
+  left: -26.5vw;
   font-family: "Proxima Nova Bold";
 }
 .section7-subheading {
@@ -253,23 +253,23 @@ top: 20.5%;
   z-index: 999;
 }
 .section8-img {
-  top: 20%;
+  top: 20vh;
   height: 75vh;
   position: absolute;
-  left: -47%;
+  left: -45vw;
 }
 .section8-arrow {
-  top: 90%;
+  top: 90vh;
   position: absolute;
-  left:  7.5%;
+  left:  7.5vw;
 }
 .section8-arrow:hover {
   cursor: pointer;
 }
 
 .section8-text {
-  margin-top: 6.5%;
-  margin-left: 7.5%;
+  margin-top: 9.5vh;
+  margin-left: 8vw;
   font-family: "Proxima Nova Bold";
 }
 .section8-subheading {
