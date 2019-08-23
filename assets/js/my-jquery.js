@@ -141,3 +141,9 @@ new simpleParallax(fifth2, {
     transition: 'cubic-bezier(0,0,0,1)'
 });
 
+$('#scroll-up').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+});

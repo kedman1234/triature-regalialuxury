@@ -118,13 +118,14 @@
 }
 .brand-text {
   margin-left: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: left;
   font-family: "Noto Serif", serif;
-  letter-spacing: 0;
   color: #e6d2ac;
-  font-size: 17px;
-  line-height: 1.4;
+  font-size: 20px;
+  font-family: "Freight Medium";
+  line-height: 1.6;
+
 }
 input[type="text"] {
   border: none;
@@ -383,4 +384,64 @@ right:10px; */
   text-orientation: mixed;
   white-space: nowrap;
 
+}
+/* CUSTOM SELECT */
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: transparent;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #AB7D23 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #AB7D23 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #AB7D23;
+  padding: 8px 0px;
+  border: 1px solid transparent;
+  border-color: transparent transparent #AB7D23 transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #00334D;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
