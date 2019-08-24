@@ -98,8 +98,8 @@ a:hover{text-decoration:none;outline:0;}
 .p-relative{position: relative;}
 .section{
     position: relative;
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    /* padding-top: 60px !important;
+    padding-bottom: 60px !important; */
 }
 .section-padding{
     padding: 50px 100px;
