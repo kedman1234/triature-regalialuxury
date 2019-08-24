@@ -40,6 +40,7 @@ $(document).ready(function() {
         }
     });
     one.owlCarousel({
+        stagePadding: 50,
         loop: true,
         margin: 20,
         nav: false,
