@@ -309,9 +309,10 @@
     position: absolute;
     width: 2px;
     background-color: #E6D2AC;
-    top: 15%;
+    top: 14%;
     bottom: 0;
     left: 50%;
+    height: 70%;
     margin-left: -3px;
 }
 .rl-container {
