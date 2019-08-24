@@ -823,7 +823,7 @@
         margin: 50px auto;
     }
     .section{
-        margin: 150px auto;
+        /* margin: 150px auto; */
     }
     .slide-progress {
         height: 8px;
