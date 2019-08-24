@@ -293,10 +293,10 @@
     content: '';
     border: 1px solid #E6D2AC;
     position: absolute;
-    left: 0px;
+    transform: translateX(-100px);
     width: 100px;
     bottom: 0px;
-    transition: all ease-in 0.8s;
+  
 }
 /* TIMELINE */
 .rl-timeline {
