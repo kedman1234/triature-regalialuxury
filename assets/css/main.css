@@ -218,6 +218,11 @@
     z-index: 100; 
     -webkit-backface-visibility: hidden; 
 }
+
+.carousel-ideas_insights .owl-stage {
+    left: -50px;
+}
+
 .zoom-effect-container {
     position: relative;
     width: 100%;
