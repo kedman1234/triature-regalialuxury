@@ -218,6 +218,11 @@
     z-index: 100; 
     -webkit-backface-visibility: hidden; 
 }
+
+.carousel-ideas_insights .owl-stage {
+    left: -112px;
+}
+
 .zoom-effect-container {
     position: relative;
     width: 100%;
@@ -709,7 +714,7 @@
         letter-spacing: 2px;
     }
     .img-logo{
-        min-width: 360px;
+        min-width: 250px;
         max-width: 400px;
     }
     .header-flex {
@@ -740,6 +745,9 @@
         -o-transform: translateY(-10px) rotate(-45deg);
         transform: translateY(-10px) rotate(-45deg);
         width: 22px;
+    }
+    .nav-icon.concierge-icon{ 
+        width: 67px;
     }
     .concierge-icon{
         width: 24px;
