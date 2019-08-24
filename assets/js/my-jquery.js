@@ -121,7 +121,7 @@ new simpleParallax(second, {
 var second2 = document.getElementsByClassName('secondthumnailone');
 new simpleParallax(second2, {
     overflow: true,
-    orientation: 'left',
+    // orientation: 'left',
     transition: 'cubic-bezier(0,0,0,1)'
 });
 var fifth0 = document.getElementsByClassName('fifth_thumbnail0');
