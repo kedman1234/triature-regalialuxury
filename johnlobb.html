@@ -238,11 +238,11 @@
         <div class="yellow-line-2"></div>
         <section class="section section2">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-5 jl-image-card">
               <img class="section2-img" src="/assets/images/johnlobb/BR_7.png" alt="" />
               <img class="section2-arrow" src="assets/images/icons/Arrow-Right.png" />
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 jl-image-content">
               <div class="section2-text">
                 <h4 class="blue-bold-text">
                   01
@@ -271,19 +271,19 @@
         </section>
         <section class="section section4">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col">
               <img class="section4-img" src="/assets/images/johnlobb/JL_5.png" alt="" />
 
             </div>
-            <div class="col-sm-6">
+            <div class="col ml-25">
               <div class="section4-text">
                 <h4 class="blue-bold-text">
                   02
                 </h4>
-                <h4 class="section4-subheading">
+                <h4 class="section2-subheading">
                   A spectrum of options
                 </h4>
-                <p class="section4-sub-text">
+                <p class="section2-sub-text">
                   A good shoe has many parts. A great one, like John Lobb, has
                   even more. As a customer, one gets to make several choices on
                   colour, leather type, accents, sole, interiors, grip to name
@@ -309,15 +309,15 @@
         </section>
         <section class="section section7">
           <div class="row">
-            <div class="col-sm-7">
-              <div class="section7-text">
+            <div class="col-sm-6 section7-text">
+              <div class="">
                 <h4 class="blue-bold-text">
                   03
                 </h4>
-                <h4 class="section7-subheading">
+                <h4 class="section2-subheading">
                   Makes work, play
                 </h4>
-                <p class="section7-sub-text">
+                <p class="section2-sub-text">
                   The robust, thorough build of every John Lobb pair delivers a
                   comfort that lasts all day. Their refined yet durable
                   aesthetics are a continuing & ever evolving legacy that has
@@ -326,8 +326,7 @@
                 <img class="section7-arrow" src="assets/images/icons/Arrow-Right.png" />
               </div>
             </div>
-            <div class="col-sm-5" style="height:75vh;">
-
+            <div class="col-sm-5">
               <img src="./assets/images/johnlobb/RTW 2.png" alt="" class="section7-img" />
             </div>
           </div>
@@ -336,19 +335,19 @@
         </section>
         <section class="section section8">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-8 section-image-wrapper">
               <img src="./assets/images/johnlobb/RTW 8.png" alt="" class="section8-img" />
-              <img class="section8-arrow" src="assets/images/icons/Arrow-Right.png" />
+              <img class="section7-arrow" src="assets/images/icons/Arrow-Right.png" />
             </div>
-            <div class="col-sm-6">
-              <div class="section8-text">
+            <div class="col-sm-4 section7-text">
+              <div class="">
                 <h4 class="blue-bold-text">
                   04
                 </h4>
-                <h4 class="section8-subheading">
+                <h4 class="section2-subheading">
                   Classic meets the contemporary
                 </h4>
-                <p class="section8-sub-text">
+                <p class="section2-sub-text">
                   The robust, thorough build of every John Lobb pair delivers a
                   comfort that lasts all day. Their refined yet durable
                   aesthetics are a continuing & ever evolving legacy that has
@@ -636,16 +635,16 @@
 
     var horizontalSlide = new TimelineMax()
       // animate panels
-      .to("#js-slideContainer", 1, { x: "-20%" })
-      .to("#js-slideContainer", 1, { x: "-40%" })
-      .to("#js-slideContainer", 1, { x: "-60%" })
-      .to("#js-slideContainer", 1, { x: "-80%" });
+      .to(".section1", 1, { x: "-100%" })
+      .to(".section2", 2, { x: "-200%" })
+      .to(".section3", 3, { x: "-300%" })
+      .to(".section4", 4, { x: "-400%" });
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
       triggerElement: "#js-wrapper",
       triggerHook: "onLeave",
-      duration: "400%"
+      duration: "2000%"
     })
       .setPin("#js-wrapper")
       .setTween(horizontalSlide)
