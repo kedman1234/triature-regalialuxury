@@ -40,6 +40,8 @@ $(document).ready(function() {
         }
     });
     one.owlCarousel({
+        stagePadding: 112,
+        items:4,
         loop: true,
         margin: 20,
         nav: false,
@@ -52,10 +54,10 @@ $(document).ready(function() {
                 items: 1
             },
             600: {
-                items: 3
+                items: 2
             },
             1000: {
-                items: 4
+                items: 3
             }
 
         }
@@ -120,6 +122,7 @@ var second2 = document.getElementsByClassName('secondthumnailone');
 new simpleParallax(second2, {
     overflow: true,
     orientation: 'left',
+    scale:1.1,
     transition: 'cubic-bezier(0,0,0,1)'
 });
 var fifth0 = document.getElementsByClassName('fifth_thumbnail0');

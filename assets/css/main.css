@@ -218,6 +218,11 @@
     z-index: 100; 
     -webkit-backface-visibility: hidden; 
 }
+
+.carousel-ideas_insights .owl-stage {
+    left: -112px;
+}
+
 .zoom-effect-container {
     position: relative;
     width: 100%;
@@ -287,6 +292,7 @@
 .section-title_left{
     display: inline-block;
     line-height: 25px;
+    color:#00334D !important;
     margin: 0 5px 0 100px;
 }
 .section-title_left:before{
@@ -312,7 +318,7 @@
     top: 14%;
     bottom: 0;
     left: 50%;
-    height: 70%;
+    height: 78%;
     margin-left: -3px;
 }
 .rl-container {
@@ -659,7 +665,7 @@
 }
 .timeline_section{
     min-height: auto;
-    padding: 100px 0px 50px !important;
+    padding: 100px 0px 25px !important;
     margin: 50px 0 0;
 }
 .fifth_link-0{
@@ -709,7 +715,7 @@
         letter-spacing: 2px;
     }
     .img-logo{
-        min-width: 360px;
+        min-width: 250px;
         max-width: 400px;
     }
     .header-flex {
@@ -740,6 +746,9 @@
         -o-transform: translateY(-10px) rotate(-45deg);
         transform: translateY(-10px) rotate(-45deg);
         width: 22px;
+    }
+    .nav-icon.concierge-icon{ 
+        width: 67px;
     }
     .concierge-icon{
         width: 24px;
@@ -814,7 +823,7 @@
         margin: 50px auto;
     }
     .section{
-        margin: 150px auto;
+        /* margin: 150px auto; */
     }
     .slide-progress {
         height: 8px;

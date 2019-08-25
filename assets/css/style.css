@@ -13,6 +13,7 @@ html {
     font-family: 'TTT-Thin', sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -21,6 +22,12 @@ body{
     line-height: 1.2;
     font-family: 'Proxima Nova Regular';
 }
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}
 ::-webkit-scrollbar{width:6px;}
 ::-webkit-scrollbar-track{
@@ -91,8 +98,8 @@ a:hover{text-decoration:none;outline:0;}
 .p-relative{position: relative;}
 .section{
     position: relative;
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    /* padding-top: 60px !important;
+    padding-bottom: 60px !important; */
 }
 .section-padding{
     padding: 50px 100px;
