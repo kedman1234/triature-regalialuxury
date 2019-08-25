@@ -633,12 +633,12 @@
 
     var controller = new ScrollMagic.Controller();
 
-    // var horizontalSlide = new TimelineMax()
+    var horizontalSlide = new TimelineMax()
       // animate panels
-      // .to("#js-slideContainer", 1, { x: "-20%" })
-      // .to("#js-slideContainer", 2, { x: "-40%" })
-      // .to("#js-slideContainer", 3, { x: "-60%" })
-      // .to("#js-slideContainer", 4, { x: "-80%" });
+      .to("#js-slideContainer", 1, { x: "-20%" })
+      .to("#js-slideContainer", 1, { x: "-40%" })
+      .to("#js-slideContainer", 1, { x: "-60%" })
+      .to("#js-slideContainer", 1, { x: "-80%" });
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
@@ -647,7 +647,7 @@
       duration: "400%"
     })
       .setPin("#js-wrapper")
-      // .setTween(horizontalSlide)
+      .setTween(horizontalSlide)
       //.addIndicators() // add indicators (requires plugin)
       .addTo(controller);
   });
